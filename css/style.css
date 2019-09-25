@@ -7,7 +7,7 @@ a{
 }
 li{
     text-decoration: none;
-    lest-style: none;
+    list-style: none;
 }
 body{
     font-family: 'Raleway', sans-serif;
@@ -74,7 +74,7 @@ footer{
     background: #000;
     margin: 0 auto;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 25px;    
 }
 footer a{
     color: white;
