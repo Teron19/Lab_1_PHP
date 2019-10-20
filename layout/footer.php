@@ -1,11 +1,11 @@
 <footer>
         <nav>
-                <a href="index.html">HOME</a>
+                <a href="index.php">HOME</a>
                 <a href="projects.html">PROJECT</a>
-                <a href="blog.html">BLOG</a>
+                <a href="?action=about">ABOUT</a>
         </nav>
         <div class="logo">
-            <a href="index.html"><img class="graficlogo" src="img/footer.png" alt=""></a>
+            <a href="index.php"><img class="graficlogo" src="img/footer.png" alt=""></a>
         </div>
         <div class="social">
             <a href="https://www.facebook.com/groups/1522823174671084/?ref=bookmarks"><img src="img/face.png" alt=""></a>

@@ -10,6 +10,6 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img class="graficlogo" src="img/LogoOrient.png " alt="Logo"></a>
+            <a href="index.php"><img class="graficlogo" src="img/LogoOrient.png " alt="Logo"></a>
         </div>
         

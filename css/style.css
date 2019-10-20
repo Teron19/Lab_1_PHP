@@ -26,7 +26,7 @@ body{
 
 nav{
     margin: auto;
-    width: 500px;
+    width: 520px;
     height: 50px;
     
 }
@@ -102,6 +102,139 @@ footer nav a:hover{
     
 }
 
+
+/* blog*/
+
+.blog-container{
+    background: #fafafa;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.2) 0 4px 2px -2px;
+    font-weight: 100;
+    margin: 20px auto;
+    width: 50%;
+}
+.bog-container a:hover{
+    border-color: #ff4d4d;
+    color: #ff4d4d;
+}
+.blog-cover{
+    background: url(../img/post1.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 25rem;
+    box-shadow: inset rgba(0,0,0,0.2) 0 64px 64px 16px;
+}
+.blog-body{
+    margin: 0 auto;
+    width: 80%;
+}
+.blog-title h1 a{
+    color: #333;
+    font-weight: 100;
+}
+.blog-text p{
+    color: #4d4d4d;
+}
+.blog-tags ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+.blog-tags li + li{
+    margin-left: 0.5rem;
+}
+.blog-tags a{
+    border: 1px solid #999999;
+    border-radius:3px;
+    color: #999999;
+    font-size:  .75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    padding: 0 .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 5rem;
+}
+.blog-footer{
+    border-top: 1px solid #e6e6e6;
+    margin: 0 auto;
+    padding-bottom: .125rem;
+    width: 80%;
+}
+.blog-footer ul{
+     list-style: none;
+     display: flex;
+     flex: row wrap;
+     justify-content: flex-end;
+     padding-left: 0;
+}  
+.blog-footer{
+    color: #999999;
+    font-size: .75rem;
+    height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    white-space: nowrap;
+}
+.published-date{
+    border: 1px solid #999999;
+    border-radius: 3px;
+    padding: 0 .5rem;
+}
+/* blog*/
+
+/*Sing up*/
+.form{
+    width: 50%;
+    margin: 50px auto;
+}
+.registration{
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #fff;
+    padding: 13px; 
+    margin-bottom: 10px;
+    width: 100%;
+    
+    border: 0px solid transparent;
+    border-bottom: 1px solid #000;
+}
+.button-sing-up{
+    float: left;
+    width: 100%;
+    border: 0px solid transparent;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    font-size: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 300;
+}
+.button-sing-up:hover{
+    background-color: rgba(17, 139, 196, 0.603);
+    color: rgb(167, 0, 0);
+    border: 1px solid;  
+}
+.easy{
+    width: 0;
+    height: 74px;
+    color: #000;
+    background-color: #fbfbfb;
+    transition: .3s ease;
+}
+
+/*Sing up*/
+
 @media screen and (max-width: 768px){
     .topnav a:not(:first-child) {
         display: none;
@@ -131,6 +264,10 @@ footer nav a:hover{
     .advantages__items{
         width: 45%;
     }
+    /*blog*/
+    .blog-container{
+        width: 28rem;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -139,5 +276,9 @@ footer nav a:hover{
     }
     .advantages__items{
         width: 100%;
+    }
+    /*blog*/
+    .blog-container{
+        width: 20rem;
     }
 }
