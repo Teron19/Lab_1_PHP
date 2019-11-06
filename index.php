@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
     include_once 'layout/header.php' ; # не підключить 2 рази файл
     include_once 'layout/menu.php' ;
     
