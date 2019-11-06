@@ -30,12 +30,13 @@ nav{
     height: 50px;
     
 }
+
 .topnav{
     background-color: #fff;
     font-size: 14px;
     margin-top: 40px;
 }
-.topnav a{
+.topnav a, .topnav p{
     color: #000;
     text-align: center;
     padding: 14px 16px;

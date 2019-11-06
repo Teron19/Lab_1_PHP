@@ -1,6 +1,6 @@
 <?php
   $errorMsg="";
-  if(isset($_POST["send"])){
+  if(isset($_POST["send"])){   //установленна ли переменная
     $error=false;
     $loginFlag=false;
     $passwordFlag=false;
@@ -32,7 +32,7 @@
     }
     $MyData->close();
 
-    if($error==false){
+    if($error==false){    // sesia 
       $_SESSION["MyLogin"]=$login;
       $_SESSION["MyID"]=$MyID;
       $_SESSION["MyAdm"]=$MyAdm;
@@ -41,31 +41,22 @@
     }
   }
 ?>
-<!-- <style>
-  label{
-    width: 150px;
-    display: inline-block;
-  }
-  form{
-        float: left;
-    background: rgba(255,255,255,0.7);
-    padding: 20px;
-    border-radius: 30px;
-  }
-</style> -->
+
 
 <form class="form" action="" method="post" name="MyForm" >
   <span><?=$errorMsg?></span>
   <p>
-    <!-- <label for="login">Логін:</label> -->
+   
     <input class="registration" name="login" type="text" placeholder="Введіть логін...">
   </p>
   <p>
-    <!-- <label for="password">Пароль:</label> -->
+    
     <input class="registration" name="password" type="password" placeholder="Введіть пароль...">
   </p>
 
   <p>
     <input class="button-sing-up" name="send" type="submit" value="Увійти">
+    <div class="easy"></div>
+
   </p>
 </form>

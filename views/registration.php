@@ -54,13 +54,13 @@ if(!empty($_POST)) {
         $pass_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
         $email=$_POST["email"];
         $lang=$_POST["language"];
-        //---------MySQL-----------
+                            #MySQL
         include_once "views/sql_include.php";
         $MyData = new mysqli($host, $user, $pass, $database);
         $MyData->query("SET NAMES 'utf8'");
         $MyData->query("INSERT INTO `users` (`login`, `password`, `email`, `language`) VALUES ('$login', '$pass_hash', '$email', '$lang')");
         $MyData->close();
-        //-------------------------
+        
         echo "<p class = 'done'>Ви успішно зареєструвались. <br> <a href='?action=main'>На головну.</a></p>";
         include_once 'layout/footer.php';
         exit();
@@ -88,7 +88,7 @@ if(!empty($_POST)) {
         <label><input type="email" name="email" class="registration" placeholder="E-mail" id="e-mail"> </label>  
         <span>* <?php echo $errorEmail;?></span>
         <br><br> 
-
+        <!-- Language -->
         <select name="language" id="language">
             <option value='0'>Оберіть мову</option>
             <?php
