@@ -47,15 +47,15 @@
   <span><?=$errorMsg?></span>
   <p>
    
-    <input class="registration" name="login" type="text" placeholder="Введіть логін...">
+    <input class="registration" name="login" type="text" placeholder="Enter your login">
   </p>
   <p>
     
-    <input class="registration" name="password" type="password" placeholder="Введіть пароль...">
+    <input class="registration" name="password" type="password" placeholder="Enter the password">
   </p>
 
   <p>
-    <input class="button-sing-up" name="send" type="submit" value="Увійти">
+    <input class="button-sing-up" name="send" type="submit" value="Log in">
     <div class="easy"></div>
 
   </p>

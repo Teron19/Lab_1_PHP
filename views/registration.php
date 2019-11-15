@@ -56,8 +56,8 @@ if(!empty($_POST)) {
         $lang=$_POST["language"];
                             #MySQL
         include_once "views/sql_include.php";
-        $MyData = new mysqli($host, $user, $pass, $database);
-        $MyData->query("SET NAMES 'utf8'");
+        $MyData = new mysqli($host, $user, $pass, $database); //підключення до бази данних
+        $MyData->query("SET NAMES 'utf8'"); // выполняет SQL-запрос без подготовки и возвращает результирующий набор (если есть)
         $MyData->query("INSERT INTO `users` (`login`, `password`, `email`, `language`) VALUES ('$login', '$pass_hash', '$email', '$lang')");
         $MyData->close();
         
